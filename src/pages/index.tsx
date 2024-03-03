@@ -1,6 +1,7 @@
 import { ArticlesResType } from '@/types/api';
 
 export default function Page({ count, articles }: ArticlesResType) {
+  console.log('カウント', count);
   return (
     <main>
       <p>記事{count}件</p>
