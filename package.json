@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "local": "env-cmd -f .env.local next dev -p 8888",
+    "dev": "env-cmd -f .env.local next dev -p 8888",
     "dev-dev": "env-cmd -f .env.dev next dev -p 8888",
     "prd": "env-cmd -f .env.prd next dev -p 8888",
     "build:dev": "env-cmd -f .env.dev next build",
@@ -13,6 +13,7 @@
     "format": "prettier --write \"./src/**/*.{js,jsx,ts,tsx,json}\""
   },
   "dependencies": {
+    "mysql2": "^3.9.1",
     "next": "14.1.0",
     "react": "^18",
     "react-dom": "^18"
